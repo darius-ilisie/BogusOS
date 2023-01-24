@@ -50,3 +50,11 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+_bak
+
+limine/limine-deploy
+limine/limine-deploy.exe
+limine/limine-version
+limine/limine-version.exe
+
