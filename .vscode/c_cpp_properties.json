@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/kernel",
+                "C:/x86_64-elf/lib/gcc/x86_64-elf/7.1.0/include",
+                "C:/x86_64-elf/lib/gcc/x86_64-elf/7.1.0/include",
+                "C:/x86_64-elf/lib/gcc/x86_64-elf/7.1.0/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "C:\\x86_64-elf\\bin\\x86_64-elf-gcc.exe"
+        }
+    ],
+    "version": 4
+}

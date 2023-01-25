@@ -73,6 +73,8 @@ int printf(const char *format, ...) {
       default:
         break;
       }
+    } else {
+        _tty_req.response->write(_tty, format+i, 1);
     }
   }
 }

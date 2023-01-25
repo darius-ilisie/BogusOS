@@ -1,6 +1,8 @@
 #include <limine.h>
 #include <stddef.h>
-#include <stdint.h>
+
+#include <hal/hal.h>
+#include <include/stdio.h>
 
 /* void handleKeypress(int code){
         char Scancode[] = {
@@ -29,12 +31,20 @@ static void done(void) {
   }
 }
 
+void kmain() {
+	printf("[kmain] Hellow to BogusOS 0.0.1-sus.25.01.2023\n");
+	//printf("[kmain] Starting FizzBuzz...\n");
+
+	//fizzbuzz();
+
+	done();
+}
+
 void _start(void) {
+  printf("Test... ");
+  initHAL();
+  printf("HAL Started...\n");
 
-  if (initIO() == -1)
-    done();
-
-  printf("%d", 5);
-
-  done();
+  printf("Starting kmain()\n");
+  kmain();
 }
